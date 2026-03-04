@@ -1,4 +1,4 @@
-# 猪猪 / zhugela 👋
+# zhugela 👋
 
 Java 后端开发（大三下）｜Spring Boot｜MySQL｜Redis｜MyBatis-Plus  
 主线：做项目 + 刷八股 + 算法（把“会用”升级到“能讲清原理”）
