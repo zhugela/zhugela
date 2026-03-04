@@ -1,16 +1,93 @@
-## Hi there 👋
+# 猪猪 / zhugela 👋
 
-<!--
-**zhugela/zhugela** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Java 后端开发（大三下）｜Spring Boot｜MySQL｜Redis｜MyBatis-Plus  
+主线：做项目 + 刷八股 + 算法（把“会用”升级到“能讲清原理”）
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 我在做什么
+- 🧩 **项目主线**：知图智能图库（图片/文件模块 + 用户模块）
+- 🧠 **八股训练**：Java 基础 / 并发 / JVM / Spring / MySQL
+- 🧪 **算法维持**：LeetCode（保持手感 + 形成可复述的解题模板）
+- 🤖 **效率工具**：AI 编程（生成/解释/Debug/结构化总结）
+
+---
+
+## 🧰 技术栈
+- **后端**：Java、Spring Boot、MyBatis-Plus、Spring MVC
+- **数据库**：MySQL（索引、分页、排序、SQL 排错）
+- **缓存/中间件**：Redis（学习中/项目结合中）
+- **工程化**：Git 分支协作、接口联调、异常处理、参数校验
+- **基础能力**：多线程、网络编程（Socket）、JVM GC、集合框架
+
+---
+
+## 📌 项目精选
+
+### 1）知图智能图库（Zhi图）
+**我负责/实现：图片上传下载链路、元信息落库、分页查询、排序与安全校验等**
+
+**图片上传链路（可面试复述）**：  
+校验 → 生成唯一 Key → 对象存储上传（COS/OSS 思路）→ 元信息入库 → 返回 URL / pictureId
+
+**我踩过并解决的坑（真实经历）**
+- ✅ **空参/空文件导致的运行时错误**：加 ThrowUtils.throwIf + 非空校验，避免 NPE  
+- ✅ **临时文件创建不安全**：使用 `Files.createTempFile` + `UUID` 生成 key，避免冲突/路径问题  
+- ✅ **下载文件名乱码/不安全**：`URLEncoder` + `Content-Disposition` + UTF-8 处理  
+- ✅ **分页排序 NPE**：把 `sortOrder.equals(...)` 改成 `"ascend".equals(sortOrder)`（经典反转写法）
+
+> 关键词：参数校验、唯一键、对象存储、元信息、分页排序、安全下载、可维护性
+
+---
+
+### 2）苍穹外卖（登录 / 鉴权链路复盘）
+**关键词：Spring Boot 三层架构 + JWT + Redis + 权限控制**
+
+**我复盘并能讲清的核心链路**
+- **登录链路**：Controller → Service → Mapper → 校验账号密码 → 生成 JWT → 返回前端
+- **鉴权链路**：前端请求携带 Token → 过滤器/拦截器解析 Token → 校验通过才放行
+- **Redis 结合点**（按业务需要选择落地）：登录态缓存 / 续期 / 踢下线 / 黑名单（提升安全与可控性）
+- **工程化处理**：参数校验、统一异常、日志记录，让“登录失败”可定位、可追踪
+
+**1 分钟面试复述版本**
+- 用户登录时服务端校验账号密码，生成 JWT 返回给前端；
+- 后续请求由前端携带 JWT，后端在拦截器里解析校验后决定放行；
+- 需要更强的会话控制时，用 Redis 做续期、踢下线或黑名单策略，让鉴权更可控、更安全。
+
+> 关键词：三层架构、JWT、拦截器/过滤器、Redis 登录态、异常治理、可观测性
+
+---
+
+## 🧠 我在补齐的“面试高频能力”
+- **HashMap 原理**：数组 + 链表 + 红黑树；扩容；负载因子 0.75 的权衡
+- **String / CompactString**：字符串存储与内存优化思路（理解而不是背）
+- **BigDecimal**：精度不丢失的原因、正确的构造方式与比较方式
+- **Optional**：避免 NPE 的可读性写法与边界
+- **线程安全 & 同步**：锁、可见性、原子性（能讲生活例子）
+- **JVM GC**：常见回收算法与场景理解
+- **Spring 工程细节**：CORS 配置、序列化 Long 转 String（前后端对接坑）
+
+---
+
+## 📚 我的学习方式（目前有效）
+- 学完一块就做“**40 秒面试复述**”：一句话 → 追问 → 生活例子 → 易错点
+- 项目每修一个 bug 就写“**问题-原因-修复-收益**”笔记
+- 算法不追数量：追 **模板化表达**（能清楚讲思路和复杂度）
+
+---
+
+## 📈 近期目标
+- ✅ 完成知图项目：图片模块 + 用户模块打通
+- 🔁 八股稳定：每天 10 题（输出笔记）+ 每周复盘
+- 🧩 算法保温：每周 5 题（至少 2 题写总结）
+
+---
+
+## 📫 联系我
+- GitHub: https://github.com/zhugela
+- Email: zyuanliang971@gmail.com
+- Blog/Notes:csdn、掘金、编程导航
+
+---
+
+> 我不追“看懂了”，我追“能讲清 + 能写出来 + 能排错”。
