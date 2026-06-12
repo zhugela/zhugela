@@ -1,73 +1,79 @@
 # zhugela 👋
 
-Java 后端开发（大三下）｜Spring Boot｜MySQL｜Redis｜MyBatis-Plus  
-主线：做项目 + 刷八股 + 算法（把“会用”升级到“能讲清原理”）
+Java Backend Developer | Spring Boot | MySQL | Redis | MyBatis-Plus
 
 ---
 
-## 🚀 我在做什么
-- 🧩 **项目主线**：知图智能图库（图片/文件模块 + 用户模块）
-- 🧠 **八股训练**：Java 基础 / 并发 / JVM / Spring / MySQL
-- 🧪 **算法维持**：LeetCode（保持手感 + 形成可复述的解题模板）
-- 🤖 **效率工具**：AI 编程（生成/解释/Debug/结构化总结）
+## 🚀 About Me
+
+大三学生，专注于后端技术栈，致力于将知识从"会用"升级到"能讲清原理"的层次。
+
+**当前主线**：项目实战 + 八股训练 + 算法提升
 
 ---
 
-## 🧰 技术栈
-- **后端**：Java、Spring Boot、MyBatis-Plus、Spring MVC
-- **数据库**：MySQL（索引、分页、排序、SQL 排错）
-- **缓存/中间件**：Redis（学习中/项目结合中）
-- **工程化**：Git 分支协作、接口联调、异常处理、参数校验
-- **基础能力**：多线程、网络编程（Socket）、JVM GC、集合框架
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Backend | Java, Spring Boot, Spring MVC, MyBatis-Plus |
+| Database | MySQL (Index, Pagination, SQL Debugging) |
+| Cache/Middleware | Redis |
+| Engineering | Git, RESTful API, Exception Handling, Parameter Validation |
+| Fundamentals | Multithreading, Socket, JVM GC, Collections Framework |
 
 ---
 
-## 📌 项目精选
+## 📁 Projects
 
-### 1）知图智能图库（Zhi图）
-**我负责/实现：图片上传下载链路、元信息落库、分页查询、排序与安全校验等**
+### 1. ZhiTu Intelligent Gallery (知图智能图库)
+**Responsibilities**: Image upload/download pipeline, metadata storage, pagination query, sorting, security validation
 
-> 关键词：参数校验、唯一键、对象存储、元信息、分页排序、安全下载、可维护性
-
----
-
-### 2）苍穹外卖（登录 / 鉴权链路复盘）
-**关键词：Spring Boot 三层架构 + JWT + Redis + 权限控制**
-
-> 关键词：三层架构、JWT、拦截器/过滤器、Redis 登录态、异常治理、可观测性
+**Keywords**: Parameter Validation, Unique Key, Object Storage, Metadata, Pagination & Sorting, Secure Download, Maintainability
 
 ---
 
-## 🧠 我在补齐的“面试高频能力”
-- **HashMap 原理**：数组 + 链表 + 红黑树；扩容；负载因子 0.75 的权衡
-- **String / CompactString**：字符串存储与内存优化思路（理解而不是背）
-- **BigDecimal**：精度不丢失的原因、正确的构造方式与比较方式
-- **Optional**：避免 NPE 的可读性写法与边界
-- **线程安全 & 同步**：锁、可见性、原子性（能讲生活例子）
-- **JVM GC**：常见回收算法与场景理解
-- **Spring 工程细节**：CORS 配置、序列化 Long 转 String（前后端对接坑）
+### 2. Sky Takeout (苍穹外卖) - Authentication Module Review
+**Keywords**: Spring Boot 3-tier Architecture, JWT, Redis Session Management, Permission Control, Interceptor/Filter, Exception Handling, Observability
 
 ---
 
-## 📚 我的学习方式（目前有效）
-- 学完一块就做“**40 秒面试复述**”：一句话 → 追问 → 生活例子 → 易错点
-- 项目每修一个 bug 就写“**问题-原因-修复-收益**”笔记
-- 算法不追数量：追 **模板化表达**（能清楚讲思路和复杂度）
+## 🧠 Interview Preparation
+
+- **HashMap**: Array + LinkedList + Red-Black Tree, Resizing, Load Factor 0.75 Trade-off
+- **String/CompactString**: Memory Optimization Strategies
+- **BigDecimal**: Precision Preservation, Correct Construction & Comparison
+- **Optional**: NPE Prevention Patterns
+- **Thread Safety**: Locks, Visibility, Atomicity
+- **JVM GC**: Common Collection Algorithms & Scenarios
+- **Spring**: CORS Configuration, Long-to-String Serialization
 
 ---
 
-## 📈 近期目标
-- ✅ 完成知图项目：图片模块 + 用户模块打通
-- 🔁 八股稳定：每天 10 题（输出笔记）+ 每周复盘
-- 🧩 算法保温：每周 5 题（至少 2 题写总结）
+## 📚 Learning Methodology
+
+- **40-second Interview Recap**: Key Point → Follow-up Questions → Real-life Examples → Common Pitfalls
+- **Bug Documentation**: Problem → Root Cause → Solution → Benefit
+- **Algorithm Practice**: Focus on template-based approach with clear complexity analysis
 
 ---
 
-## 📫 联系我
-- GitHub: https://github.com/zhugela
-- Email: zyuanliang971@gmail.com
-- Blog/Notes:csdn、掘金、编程导航
+## 📅 Current Goals
+
+| Status | Goal |
+|--------|------|
+| ✅ | Complete ZhiTu Project: Image Module + User Module Integration |
+| 🔄 | Daily System Design Practice: 10 questions/day + Weekly Review |
+| 🧩 | Algorithm Maintenance: 5 questions/week (2 with detailed summaries) |
 
 ---
 
-> 我不追“看懂了”，我追“能讲清 + 能写出来 + 能排错”。
+## 📫 Contact
+
+- **GitHub**: [@zhugela](https://github.com/zhugela)
+- **Email**: zyuanliang971@gmail.com
+- **Blog**: CSDN, Juejin, Programming Navigation
+
+---
+
+> "I don't chase 'I understand', I chase 'I can explain + I can implement + I can debug'"
